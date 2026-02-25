@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sonique Race</title>
+
+  <!-- connect css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Main content area -->
+  <div class="content">
+
+    <h1>Sonique Race</h1>
+
+    <p>Paste Zoom participant names (one per line):</p>
+
+    <!-- textarea for names -->
+    <textarea id="namesInput"></textarea>
+
+    <div class="buttons">
+      <button id="generateBtn">Generate Racers</button>
+      <button id="startBtn">Start Race</button>
+    </div>
+
+  </div>
+
+  <!-- winner text -->
+  <p id="winner"></p>
+
+<!-- race track -->
+<div id="track">
+  <div class="layer sky"></div>
+  <div class="layer mid"></div>
+  <div class="layer grass"></div>
+  <div id="runnerLayer"></div>
+</div>
+
+  <!-- sounds -->
+  <audio id="raceMusic" src="media/bg.mp3"></audio>
+  <audio id="startSound" src="media/dash.mp3"></audio>
+  <audio id="winSound" src="media/rings.mp3"></audio>
+
+  <!-- javascript at bottom -->
+  <script src="script.js"></script>
+
+</body>
+</html>
